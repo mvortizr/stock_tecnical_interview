@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @State private var showCustomDialog = false
+    @ObservedObject var stockFetcher: StockFetcher
     
     var body: some View {
         ZStack {
@@ -30,7 +31,7 @@ struct Home: View {
                             .shadow(radius: 5)
                     }
                 }
-                StockList()
+                StockList(stockQuotes: stockFetcher.stockQuotes)
             }
             .background(Color.black)
             
@@ -39,9 +40,12 @@ struct Home: View {
                 CustomDialog(
                     title: "New Stock Symbol",
                     buttonTitle: "Ok",
-                    action: {
-                        print("Button tapped!")
-                        showCustomDialog = false // Close dialog on button tap
+                    action: { newSymbol in
+                        stockFetcher.addSymbolToDefaults(newSymbol)
+                        Task {
+                            await stockFetcher.fetchStocks() // Refetch stock asynchronously
+                        }
+                        showCustomDialog = false
                     },
                     textfieldLabel: "Enter new Stock Symbol",
                     closeAction: {
@@ -53,6 +57,6 @@ struct Home: View {
     }
 }
 
-#Preview {
-    Home()
-}
+//#Preview {
+//    Home()
+//}

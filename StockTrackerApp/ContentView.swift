@@ -7,16 +7,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var crumFetcher = CrumFetcher()
+    @StateObject private var stockFetcher = StockFetcher()
    
     var body: some View {
         VStack{
-            if let crumb = crumFetcher.crumb {
-                           Text("Crumb: \(crumb)")
-                       } else {
-                           Text("Loading...")
-                       }
-            Home()
+            Home(stockFetcher: stockFetcher)
         }
         
     }

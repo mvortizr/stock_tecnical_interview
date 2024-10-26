@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct CustomDialog: View {
     let title: String
     let buttonTitle: String
-    let action: () -> Void
+    let action: (String) -> Void
     let textfieldLabel: String
     let closeAction: () -> Void // New parameter for closing action
     
@@ -28,7 +26,7 @@ struct CustomDialog: View {
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal, 20)
             Button {
-                action()
+                action(userInput)
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
@@ -68,14 +66,14 @@ struct CustomDialog: View {
     }
 }
 
-#Preview {
-    CustomDialog(
-        title: "New Stock Symbol",
-        buttonTitle: "Ok",
-        action: {
-            print("Button tapped!")
-        },
-        textfieldLabel: "Enter new Stock Symbol",
-        closeAction: {}
-    )
-}
+//#Preview {
+//    CustomDialog(
+//        title: "New Stock Symbol",
+//        buttonTitle: "Ok",
+//        action: {
+//            print("Button tapped!")
+//        },
+//        textfieldLabel: "Enter new Stock Symbol",
+//        closeAction: {}
+//    )
+//}

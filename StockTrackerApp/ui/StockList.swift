@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-let stocks = [
-        Stock(id: "AAPL", symbol: "AAPL", stockPrice: 150.0, maxPriceToday: 155.0, minPriceToday: 145.0),
-        Stock(id: "GOOGL", symbol: "GOOGL", stockPrice: 2000.0, maxPriceToday: 2100.0, minPriceToday: 1900.0)
-    ]
 
 
 struct StockList: View {
+    let stockQuotes: [StockQuote]
     var body: some View {
         
-            List {
-                StockRow(stock: stocks[0])
-                StockRow(stock: stocks[1])
+//            List {
+//                StockRow(stock: stocks[0])
+//                StockRow(stock: stocks[1])
+//            }
+            List(stockQuotes) { quote in
+                StockRow(stock: quote)
             }
             .scrollContentBackground(.hidden)
             .background(Color.black)
@@ -31,6 +31,6 @@ struct StockList: View {
 }
 
 
-#Preview {
-    StockList()
-}
+//#Preview {
+//    StockList()
+//}
