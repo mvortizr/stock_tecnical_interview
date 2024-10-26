@@ -14,6 +14,10 @@
 		4CA7D0572CCC828A00D50E62 /* StockTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0562CCC828A00D50E62 /* StockTrackerAppTests.swift */; };
 		4CA7D0612CCC828A00D50E62 /* StockTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0602CCC828A00D50E62 /* StockTrackerAppUITests.swift */; };
 		4CA7D0632CCC828A00D50E62 /* StockTrackerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0622CCC828A00D50E62 /* StockTrackerAppUITestsLaunchTests.swift */; };
+		4CA7D0702CCC83F300D50E62 /* StockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D06F2CCC83F300D50E62 /* StockRow.swift */; };
+		4CA7D0722CCC844400D50E62 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0712CCC844400D50E62 /* Stock.swift */; };
+		4CA7D0742CCC898A00D50E62 /* StockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0732CCC898A00D50E62 /* StockList.swift */; };
+		4CA7D0782CCD373D00D50E62 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		4CA7D05C2CCC828A00D50E62 /* StockTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA7D0602CCC828A00D50E62 /* StockTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppUITests.swift; sourceTree = "<group>"; };
 		4CA7D0622CCC828A00D50E62 /* StockTrackerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CA7D06F2CCC83F300D50E62 /* StockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRow.swift; sourceTree = "<group>"; };
+		4CA7D0712CCC844400D50E62 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		4CA7D0732CCC898A00D50E62 /* StockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList.swift; sourceTree = "<group>"; };
+		4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				4CA7D0482CCC828A00D50E62 /* Assets.xcassets */,
 				4CA7D04A2CCC828A00D50E62 /* StockTrackerApp.entitlements */,
 				4CA7D04B2CCC828A00D50E62 /* Preview Content */,
+				4CA7D06F2CCC83F300D50E62 /* StockRow.swift */,
+				4CA7D0712CCC844400D50E62 /* Stock.swift */,
+				4CA7D0732CCC898A00D50E62 /* StockList.swift */,
+				4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */,
 			);
 			path = StockTrackerApp;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA7D0702CCC83F300D50E62 /* StockRow.swift in Sources */,
 				4CA7D0472CCC828700D50E62 /* ContentView.swift in Sources */,
+				4CA7D0722CCC844400D50E62 /* Stock.swift in Sources */,
 				4CA7D0452CCC828700D50E62 /* StockTrackerAppApp.swift in Sources */,
+				4CA7D0782CCD373D00D50E62 /* CustomDialog.swift in Sources */,
+				4CA7D0742CCC898A00D50E62 /* StockList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
