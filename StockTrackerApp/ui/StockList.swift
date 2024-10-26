@@ -12,12 +12,6 @@ let stocks = [
         Stock(id: "GOOGL", symbol: "GOOGL", stockPrice: 2000.0, maxPriceToday: 2100.0, minPriceToday: 1900.0)
     ]
 
-// List(landmarks, id: \.id) { landmark in
-//}
-
-//  List(landmarks) { landmark in
-//LandmarkRow(landmark: landmark)
-//}
 
 struct StockList: View {
     var body: some View {

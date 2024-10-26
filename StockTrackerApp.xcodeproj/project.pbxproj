@@ -18,6 +18,9 @@
 		4CA7D0722CCC844400D50E62 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0712CCC844400D50E62 /* Stock.swift */; };
 		4CA7D0742CCC898A00D50E62 /* StockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0732CCC898A00D50E62 /* StockList.swift */; };
 		4CA7D0782CCD373D00D50E62 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */; };
+		4CFCA4EF2CCD63DC00671D5F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4EE2CCD63DC00671D5F /* Home.swift */; };
+		4CFCA4F22CCD664600671D5F /* CrumbFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F12CCD664600671D5F /* CrumbFetcher.swift */; };
+		4CFCA4F42CCD6BD300671D5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F32CCD6BD300671D5F /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		4CA7D0712CCC844400D50E62 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		4CA7D0732CCC898A00D50E62 /* StockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList.swift; sourceTree = "<group>"; };
 		4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
+		4CFCA4EE2CCD63DC00671D5F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4CFCA4F12CCD664600671D5F /* CrumbFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumbFetcher.swift; sourceTree = "<group>"; };
+		4CFCA4F32CCD6BD300671D5F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +109,14 @@
 		4CA7D0432CCC828700D50E62 /* StockTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CFCA4F02CCD65A400671D5F /* requests */,
+				4CFCA4ED2CCD63C200671D5F /* entities */,
+				4CFCA4EC2CCD63A300671D5F /* ui */,
 				4CA7D0442CCC828700D50E62 /* StockTrackerAppApp.swift */,
 				4CA7D0462CCC828700D50E62 /* ContentView.swift */,
 				4CA7D0482CCC828A00D50E62 /* Assets.xcassets */,
 				4CA7D04A2CCC828A00D50E62 /* StockTrackerApp.entitlements */,
 				4CA7D04B2CCC828A00D50E62 /* Preview Content */,
-				4CA7D06F2CCC83F300D50E62 /* StockRow.swift */,
-				4CA7D0712CCC844400D50E62 /* Stock.swift */,
-				4CA7D0732CCC898A00D50E62 /* StockList.swift */,
-				4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */,
 			);
 			path = StockTrackerApp;
 			sourceTree = "<group>";
@@ -139,6 +144,34 @@
 				4CA7D0622CCC828A00D50E62 /* StockTrackerAppUITestsLaunchTests.swift */,
 			);
 			path = StockTrackerAppUITests;
+			sourceTree = "<group>";
+		};
+		4CFCA4EC2CCD63A300671D5F /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7D0772CCD373D00D50E62 /* CustomDialog.swift */,
+				4CA7D0732CCC898A00D50E62 /* StockList.swift */,
+				4CA7D06F2CCC83F300D50E62 /* StockRow.swift */,
+				4CFCA4EE2CCD63DC00671D5F /* Home.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4CFCA4ED2CCD63C200671D5F /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7D0712CCC844400D50E62 /* Stock.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		4CFCA4F02CCD65A400671D5F /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCA4F12CCD664600671D5F /* CrumbFetcher.swift */,
+				4CFCA4F32CCD6BD300671D5F /* APIManager.swift */,
+			);
+			path = requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +307,12 @@
 				4CA7D0702CCC83F300D50E62 /* StockRow.swift in Sources */,
 				4CA7D0472CCC828700D50E62 /* ContentView.swift in Sources */,
 				4CA7D0722CCC844400D50E62 /* Stock.swift in Sources */,
+				4CFCA4F42CCD6BD300671D5F /* APIManager.swift in Sources */,
 				4CA7D0452CCC828700D50E62 /* StockTrackerAppApp.swift in Sources */,
 				4CA7D0782CCD373D00D50E62 /* CustomDialog.swift in Sources */,
 				4CA7D0742CCC898A00D50E62 /* StockList.swift in Sources */,
+				4CFCA4EF2CCD63DC00671D5F /* Home.swift in Sources */,
+				4CFCA4F22CCD664600671D5F /* CrumbFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
