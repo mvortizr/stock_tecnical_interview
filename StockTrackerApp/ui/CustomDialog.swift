@@ -19,10 +19,10 @@ struct CustomDialog: View {
     var body: some View {
         VStack {
             Text(title)
-                .font(.title2)
-                .bold()
+                .font(.system(size: 20))
                 .padding()
             TextField(textfieldLabel, text: $userInput)
+                .foregroundColor(.black)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal, 20)
             Button {
@@ -31,8 +31,12 @@ struct CustomDialog: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(.black)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
                     Text(buttonTitle)
-                        .font(.system(size: 16, weight: .bold))
+                        .font(.system(size: 16))
                         .foregroundColor(.white)
                         .padding()
                 }
@@ -66,14 +70,3 @@ struct CustomDialog: View {
     }
 }
 
-//#Preview {
-//    CustomDialog(
-//        title: "New Stock Symbol",
-//        buttonTitle: "Ok",
-//        action: {
-//            print("Button tapped!")
-//        },
-//        textfieldLabel: "Enter new Stock Symbol",
-//        closeAction: {}
-//    )
-//}

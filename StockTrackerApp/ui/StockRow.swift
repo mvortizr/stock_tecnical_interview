@@ -12,18 +12,34 @@ struct StockRow: View {
 
 
     var body: some View {
-        HStack{
-            Text (stock.id)
-            Text(stock.regularMarketPrice, format: .number)
-            Text(stock.regularMarketDayLow, format: .number)
-            Text(stock.regularMarketDayHigh, format: .number)
-            
-        }.listRowBackground(Color.black)
+        VStack {
+            HStack {
+                    Text(stock.id)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Text(stock.regularMarketPrice, format: .number.precision(.fractionLength(2)))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    HStack(spacing: 4) {
+                            Image(systemName: "arrow.down.right.circle.fill") // Example image
+                                .foregroundColor(.red)
+                            Text(stock.regularMarketDayLow, format: .number.precision(.fractionLength(2)))
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.up.left.circle.fill")
+                            .foregroundColor(.blue)
+                        Text(stock.regularMarketDayHigh, format: .number.precision(.fractionLength(2)))
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding(.vertical, 4) // Optional: to control row height
+
+                Divider() // Adds separator only at the bottom
+                    .background(Color.white) // Customize the separator color
+            }
+            .listRowBackground(Color.black)
+
     }
 }
-
-
-//#Preview {
-//    
-//    StockRow(stock: StockQuote(symbol: "AAPL", regularMarketPrice: 150.0, regularMarketDayLow: 155.0, regularMarketDayHigh: 145.0))
-//}

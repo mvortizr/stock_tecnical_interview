@@ -16,21 +16,30 @@ struct Home: View {
             VStack {
                 Spacer()
                 HStack {
+                    Spacer()
                     Text("My Stocks")
+                        .font(.system(size: 20))
                         .foregroundColor(.white)
+                        .padding()
+                    
+                    Spacer()
                     Button(action: {
                         showCustomDialog.toggle()
                     }) {
                         Circle()
                             .fill(.blue)
-                            .frame(width: 60, height: 60)
+                            .frame(width: 30, height: 30)
+                            .overlay(
+                                Circle() // Add this for the outline
+                                    .stroke(Color.white, lineWidth: 1) // Customize the outline color and width
+                            )
                             .overlay(
                                 Image(systemName: "plus")
                                     .foregroundColor(.white)
                             )
                             .shadow(radius: 5)
                     }
-                }
+                }.padding()
                 StockList(stockQuotes: stockFetcher.stockQuotes)
             }
             .background(Color.black)

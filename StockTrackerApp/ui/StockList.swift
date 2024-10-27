@@ -15,14 +15,12 @@ struct StockList: View {
         
             List(stockQuotes) { quote in
                 StockRow(stock: quote)
+                    .listRowInsets(EdgeInsets())
             }
             .scrollContentBackground(.hidden)
             .background(Color.black)
-            
             .foregroundColor(.white)
             
-        
-        
     }
 }
 
