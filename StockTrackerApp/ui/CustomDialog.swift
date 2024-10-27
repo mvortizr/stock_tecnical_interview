@@ -22,7 +22,7 @@ struct CustomDialog: View {
                 .font(.system(size: 20))
                 .padding()
             TextField(textfieldLabel, text: $userInput)
-                .foregroundColor(.black)
+                .foregroundColor(Color.customGray)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal, 20)
             Button {
@@ -30,7 +30,7 @@ struct CustomDialog: View {
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.customGray)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
                                 .stroke(Color.white, lineWidth: 1)
@@ -45,7 +45,7 @@ struct CustomDialog: View {
         }
         .fixedSize(horizontal: false, vertical: true)
         .padding()
-        .background(.black)
+        .background(Color.customGray)
         .foregroundColor(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .overlay {

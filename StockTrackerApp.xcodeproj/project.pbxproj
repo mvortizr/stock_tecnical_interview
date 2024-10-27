@@ -21,6 +21,7 @@
 		4CFCA4F22CCD664600671D5F /* StockFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F12CCD664600671D5F /* StockFetcher.swift */; };
 		4CFCA4F42CCD6BD300671D5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F32CCD6BD300671D5F /* APIManager.swift */; };
 		4CFCA4F62CCD8C5000671D5F /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F52CCD8C5000671D5F /* StockQuote.swift */; };
+		4CFCA4F82CCDF5B800671D5F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCA4F72CCDF5B800671D5F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4CFCA4F12CCD664600671D5F /* StockFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFetcher.swift; sourceTree = "<group>"; };
 		4CFCA4F32CCD6BD300671D5F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		4CFCA4F52CCD8C5000671D5F /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
+		4CFCA4F72CCDF5B800671D5F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				4CA7D0732CCC898A00D50E62 /* StockList.swift */,
 				4CA7D06F2CCC83F300D50E62 /* StockRow.swift */,
 				4CFCA4EE2CCD63DC00671D5F /* Home.swift */,
+				4CFCA4F72CCDF5B800671D5F /* Color.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				4CA7D0702CCC83F300D50E62 /* StockRow.swift in Sources */,
 				4CA7D0472CCC828700D50E62 /* ContentView.swift in Sources */,
 				4CFCA4F42CCD6BD300671D5F /* APIManager.swift in Sources */,
+				4CFCA4F82CCDF5B800671D5F /* Color.swift in Sources */,
 				4CA7D0452CCC828700D50E62 /* StockTrackerAppApp.swift in Sources */,
 				4CFCA4F62CCD8C5000671D5F /* StockQuote.swift in Sources */,
 				4CA7D0782CCD373D00D50E62 /* CustomDialog.swift in Sources */,

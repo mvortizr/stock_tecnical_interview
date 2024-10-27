@@ -18,7 +18,7 @@ struct StockList: View {
                     .listRowInsets(EdgeInsets())
             }
             .scrollContentBackground(.hidden)
-            .background(Color.black)
+            .background(Color.customGray)
             .foregroundColor(.white)
             
     }

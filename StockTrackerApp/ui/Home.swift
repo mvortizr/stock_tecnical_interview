@@ -27,7 +27,7 @@ struct Home: View {
                         showCustomDialog.toggle()
                     }) {
                         Circle()
-                            .fill(.blue)
+                            .fill(Color.customGray)
                             .frame(width: 30, height: 30)
                             .overlay(
                                 Circle() // Add this for the outline
@@ -42,7 +42,7 @@ struct Home: View {
                 }.padding()
                 StockList(stockQuotes: stockFetcher.stockQuotes)
             }
-            .background(Color.black)
+            .background(Color.customGray)
             
             
             if showCustomDialog {
