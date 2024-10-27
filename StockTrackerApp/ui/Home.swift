@@ -41,9 +41,9 @@ struct Home: View {
                     title: "New Stock Symbol",
                     buttonTitle: "Ok",
                     action: { newSymbol in
-                        stockFetcher.addSymbolToDefaults(newSymbol)
                         Task {
-                            await stockFetcher.fetchStocks() // Refetch stock asynchronously
+                            await stockFetcher.addSymbol(newSymbol)
+                            // check if symbol is valid and refecht stocks
                         }
                         showCustomDialog = false
                     },
